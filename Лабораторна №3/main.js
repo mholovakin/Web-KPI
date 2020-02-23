@@ -9,8 +9,10 @@ for (let i =0; i < cards.length; i++){
 
 function startrotate(event){
    const cardItem = this.querySelector('.card-item');
+   
     const halfHeight = cardItem.offsetHeight / 2;
     const halfWidth = cardItem.offsetWidth / 2;
+	
    cardItem.style.transform = 
    'rotateX('+-(event.offsetY - halfHeight)/10+'deg) rotateY('+(event.offsetX - halfWidth)/10+'deg)';
 }

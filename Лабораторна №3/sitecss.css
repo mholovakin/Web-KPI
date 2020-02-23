@@ -142,6 +142,10 @@ footer {
  .containertg {
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   z-index: 3;
+ }
+  .card-itemtg{
+  width: 250px;
+  height: 250px;
+  transition: transform 0.2s;
