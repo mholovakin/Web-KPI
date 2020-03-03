@@ -1,0 +1,27 @@
+.links a
+{
+    text-decoration: none;
+    margin: center;
+    text-align: center;
+    display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  font: 40pt Verdana;
+  text-shadow: #000 1px 0px 2px, 
+  #000 0px 1px 1px, 
+  #000 0px -1px 1px, 
+  #000 -1px 0px 1px
+  ,0 0 40px rgba(0,0,0,0.8);
+  color: coral;
+}
+
+footer {
+    display: flex;
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 20px; /* Поля вокруг текста */
+    background: coral; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%;
+}

@@ -1,0 +1,62 @@
+footer {
+    display: flex;
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 20px; /* Поля вокруг текста */
+    background: coral; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%;
+    grid-row: 4; 
+   grid-column: 1;
+}
+.rectangle {
+	width: 200px;
+	height: 200px;
+    background: red;
+    grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   grid-row: 3; 
+   grid-column: 1;
+   margin-left:auto;
+   margin-right: auto;
+}
+.rectangle:hover
+{
+    transform: rotateY(45deg);
+    transition: 2s;
+    animation: rectangle111 2s infinite;
+}
+
+@keyframes rectangle111 {
+    0%{background: red;}
+    6%{background: yellow;}
+    50%{background: blue;}
+    94%{background: slateblue;}
+    100%{background: fuchsia;}
+}
+
+.round
+{
+  background: red;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  grid-row: 2; 
+   grid-column: 1;
+   text-align: center;
+}
+
+.round:hover
+{
+    transform: translate(0px, 230px);
+    transform: 1.5s linear;
+    transition: 2s;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 192px min-content min-content 1fr;
+    grid-template-columns: 1fr 20em;
+ }

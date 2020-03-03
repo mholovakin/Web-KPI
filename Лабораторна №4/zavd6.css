@@ -1,0 +1,35 @@
+.triangle_down {
+    width: 0; 
+    height: 0; 
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    position: center;
+    border-top: 400px solid #f00;
+    margin-left: auto;
+    margin-right: auto;
+}
+.triangle_down:hover
+{
+    transition: all 0.5s ease-in-out;
+    transform: translate(0px, 100px);
+    animation: anim 0.5s infinite;  
+    
+}
+
+footer {
+    display: flex;
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 20px; /* Поля вокруг текста */
+    background: coral; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%;
+}
+
+@keyframes anim {
+    0%{border-top: 100px solid #8ffe09;}
+    25%{border-top:400px solid #fc0fc0;}
+    50%{border-top: 30px solid #ffa812;}
+    75%{border-top: 500px solid #0cfff9;}
+    100%{border-top: 50px solid #ff2f0c;}
+}

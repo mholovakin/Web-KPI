@@ -1,0 +1,46 @@
+.triangle_down {
+    width: 0; 
+    height: 0; 
+    z-index: 7;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    position: relative;
+    border-top: 20vh solid #f00;
+    display: flex;
+    margin: 20px;
+}
+.triangle_down:hover
+{
+    transition: all 3s ease;
+    transform: translate(0px, 230px);
+    
+}
+
+footer {
+    display: flex;
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 20px; /* Поля вокруг текста */
+    background: coral; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%;
+    z-index: 6;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 4;
+}
+.card-item{
+    display: flex;
+    width:20vh;
+    height:20vh;
+    background: gold;
+    z-index: 5;
+    -o-object-fit: cover;
+      object-fit: cover;
+      padding: 10px;
+}

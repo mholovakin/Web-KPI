@@ -139,6 +139,19 @@ footer {
   
  } /* Ширина слоя */
 
+ .tab {
+   margin: auto;
+  color: gold;
+  text-align: center;
+  font: 40pt Verdana;
+  text-shadow: #000 1px 0px 2px, 
+  #000 0px 1px 1px, 
+  #000 0px -1px 1px, 
+  #000 -1px 0px 1px
+  ,0 0 40px rgba(0,0,0,0.8);
+}
+
+
  .containertg {
   display: flex;
   position: relative;
