@@ -1,0 +1,19 @@
+.flexim {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vw;
+    width: 100%;
+    margin-bottom: 10vh;
+  }
+  
+  .flex1{ width: 70%; height: 33%; background: url(media/ric.gif) 50% 50% no-repeat; background-size: cover;}
+  .flex2{ width: 30%; height: 33%; background: url(media/ric1.gif) 50% 50% no-repeat; background-size: cover;}
+  
+  .flex11{ width: 10%; height: 34%; background: url(media/ric2.gif) 50% 50% no-repeat; background-size: cover}
+  .flex22{ width: 45%; height: 34%; background: url(media/ric3.gif) 50% 50% no-repeat; background-size: cover}
+  .flex33{ width: 45%; height: 34%; background: url(media/ric4.gif) 50% 50% no-repeat; background-size: cover}
+  
+  .flex111{ width: 10%; height: 33%; background: url(media/ric5.gif) 50% 50% no-repeat; background-size: cover;}
+  .flex222{ width: 80%; height: 33%; background: url(media/gif6.gif) 50% 50% no-repeat; background-size: cover;}
+  .flex333{ width: 10%; height: 33%; background: url(media/ric7.gif) 50% 50% no-repeat; background-size: cover;}
+  
