@@ -1,0 +1,167 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: #c2c1c1;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    margin-top: 13px;
+}
+.menu__item{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.menu__item a{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.main-header{
+    padding: 24px;
+}
+
+.book{
+    margin-top: 8px;
+}
+
+.offer{
+    background: url("images/homebg.png") no-repeat center top;
+    padding: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    font-size: 72px;
+    font-family: 'Old Standard TT', serif;
+    color: #ffffff;
+}
+
+.title__heading{
+    font-weight: 700;
+    font-size: 72px;
+    font-family: 'Old Standard TT', serif;
+    color: #ffffff;
+   
+}
+.title{
+    padding-top: 276px;
+    padding-bottom: 459px;
+    text-align: center;
+}
+
+.title__desc{
+    font-size: 28px;
+}
+
+.history{
+    background: url("images/historybg.png") no-repeat center top;
+}
+
+.title_history__heading{
+    color: #3c3c3c;
+    padding-top: 216px;
+    font-size: 60px;
+}
+
+.title_history__desc
+{
+    color: #6a6a6a;
+    padding-bottom: 90.7px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.title_history__desc2
+{
+    color: #6a6a6a;
+    padding-top: 990px;
+    padding-bottom: 470px;
+    font-size: 18px;
+}
+
+
+.read_more
+{
+    padding-bottom: 234px;   
+}
+.filler_1__heading{
+    color: #3c3c3c;
+    font-size: 60px;
+}
+
+.filler_1__desc
+{
+    color: #6a6a6a;
+    font-size: 18px;
+}
+.features{
+    background: url("images/featuresbg.png") no-repeat center top;
+    padding-bottom: 807px;
+}
+
+.filler_2__heading{
+    color: #3c3c3c;
+    font-size: 60px;
+    padding-top: 187px;
+}
+
+.filler_2__desc
+{
+    color: #6a6a6a;
+    font-size: 18px;
+}
+
+.details
+{
+    background: url("images/components.png") no-repeat center top;
+    padding-bottom: 360px;
+}
+
+.buynow{
+    padding-bottom: 147px;
+}
+
+.footer{
+    background: url("images/footerbg.png") no-repeat center top;
+}
+
+.spacef1{
+    padding-top:147px;
+}
+
+.spacef2{
+    padding-bottom:254px;
+}
+
+.rectangle{
+    background: #FFF;
+    height: 450px;
+    width: 1270px;
+}
+.sub{
+    padding-top: 100px;
+    color: #3c3c3c;
+}
+
+input {
+	padding-left: 10px;scroll-behavior: smooth;
+	color: #6a6a6a;
+	background: #e8e8e8;
+	height: 58px;
+	width: 490px;
+}
+
+.inputer {
+	margin-top: 60px;
+	width: 100%;
+}
