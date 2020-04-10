@@ -173,8 +173,24 @@
                         <p style="color: #6a6a6a; font-size: 18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br/>
                             dolore magna aliqua enim ad minim veniam, quis nostrud exercitation.</p>
                             <div class="inputer">
-                                <input type="email" value = "Your email adress" onkeyup = "Save(this);">
-                                <a href="#" name = "subscribe"><img src="images/Subscribe.png" alt="Subscribe"></a>
+                                <input type="text" id="txt_1" onkeyup='saveValue(this);'/> 
+								<script type="text/javascript">
+									document.getElementById("txt_1").value = getSavedValue("txt_1");    
+									function saveValue(e){
+										var id = e.id;   
+										var val = e.value; 
+										localStorage.setItem(id, val);
+									}
+
+        
+									function getSavedValue  (v){
+										if (!localStorage.getItem(v)) {
+											return "";
+										}
+										return localStorage.getItem(v);
+									}
+								</script>
+                                <a href="#"><img src="images/Subscribe.png" alt="Subscribe"></a>
                             </div>
                         </center>
                     </div>
