@@ -1,12 +1,12 @@
-class PhotoGallery extends HTMLElement{
-	constructor(){
+class PhotoGallery extends HTMLElement {
+    constructor() {
         super()
         const div = document.createElement("div");
-		const shadow = this.attachShadow({mode: "open"});
-		div.setAttribute("id", "photo-gallery");
-		shadow.appendChild(div);
-		const style = document.createElement("style");
-		style.innerHTML = `
+        const shadow = this.attachShadow({ mode: "open" });
+        div.setAttribute("id", "photo-gallery");
+        shadow.appendChild(div);
+        const style = document.createElement("style");
+        style.innerHTML = `
 		#photo-gallery
 		{
 			display: flex;
@@ -27,8 +27,8 @@ class PhotoGallery extends HTMLElement{
 		#photo-gallery div#fullscreen
 		{
 			position: absolute;
-			height: 150vh;
-			width: 150vw;
+			height: 100%;
+			width: 100%;
 			transition: all .5s ease-out;
             z-index: 3;
         }
@@ -38,23 +38,21 @@ class PhotoGallery extends HTMLElement{
             opacity: 0.33;
             z-index: 2;
         }`;
-		shadow.appendChild(style);
-		if (this.hasAttribute("ImageList"))
-		{
-			let piclist = this.getAttribute("ImageList").split(';');
-			for (let i of piclist)
-			{
+        shadow.appendChild(style);
+        if (this.hasAttribute("ImageList")) {
+            let piclist = this.getAttribute("ImageList").split(';');
+            for (let i of piclist) {
                 const element = document.createElement("div");
                 element.setAttribute("onclick", "fullscreen(this)");
-				const pic = document.createElement("img");
-				pic.setAttribute("onerror", "this.src = 'https://pngimage.net/wp-content/uploads/2018/06/png-error-1.png'")
-				pic.setAttribute("onload", "calculate_size(this)")
-				pic.setAttribute("src", i);
-				element.appendChild(pic);
+                const pic = document.createElement("img");
+                pic.setAttribute("onerror", "this.src = 'https://pngimage.net/wp-content/uploads/2018/06/png-error-1.png'")
+                pic.setAttribute("onload", "calculate_size(this)")
+                pic.setAttribute("src", i);
+                element.appendChild(pic);
                 div.appendChild(element);
-			}
-		}
-	}
+            }
+        }
+    }
 }
 
 function calculate_size(img) {
@@ -73,27 +71,25 @@ customElements.define("photo-gallery", PhotoGallery);
 
 let full = false;
 let gallerystyle = '';
-function fullscreen(pic){
-	if(!full)
-	{
-		full = true;
-		pic.setAttribute("id", "fullscreen");
-		gallerystyle =  pic.firstChild.getAttribute("style");
-        pic.firstChild.setAttribute("style","height:95vh;");
+
+function fullscreen(pic) {
+    if (!full) {
+        full = true;
+        pic.setAttribute("id", "fullscreen");
+        gallerystyle = pic.firstChild.getAttribute("style");
+        pic.firstChild.setAttribute("style", "height:95vh;");
 
 
-	}
-	else
-	{
-		pic.setAttribute("id", "");
-		pic.firstChild.setAttribute("style", gallerystyle);
-		full = false;
-	}
+    } else {
+        pic.setAttribute("id", "");
+        pic.firstChild.setAttribute("style", gallerystyle);
+        full = false;
+    }
 }
 
-document.body.onload = function(){
-	setTimeout(function(){
-		let preloader = document.getElementById("loader");
-		preloader.style.visibility = "hidden";
-	}, 1000)
+document.body.onload = function() {
+    setTimeout(function() {
+        let preloader = document.getElementById("loader");
+        preloader.style.display = "none";
+    }, 1000)
 }
