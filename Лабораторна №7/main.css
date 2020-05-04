@@ -146,7 +146,8 @@ h6 {
     background: #FFF;
     height: 450px;
     width: 1270px;
-    margin-left: 403px;
+    vertical-align: middle;
+    margin: auto
 }
 
 .sub {
