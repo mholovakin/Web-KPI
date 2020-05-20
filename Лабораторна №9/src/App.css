@@ -1,0 +1,16 @@
+.App {
+    text-align: center;
+}
+
+body {
+    background-color: #4f5b66;
+}
+
+input {
+    border: 0;
+}
+
+.submitButton {
+    border: 0;
+    margin-bottom: 17px;
+}
