@@ -39,11 +39,10 @@ class Images extends Component {
         })
     }
 
-    imageDeletter = (url) => {
+    imageDeletter(url, e) {
         let imageUrlsArray = this.state.imageUrlArray;
         let indexSplice = imageUrlsArray.indexOf(url)
         imageUrlsArray.splice(indexSplice, 1)
-        console.log(url)
         this.setState({
             imageUrlsArray: imageUrlsArray
         })
@@ -56,6 +55,13 @@ class Images extends Component {
         })
     }
 
+
+    ttt = (smth1, smth2) => {
+        this.imageDeletter(smth1, smth2)
+        this.handlePopup()
+    }
+
+
     render() {
         let imageUrlArray = this.state.imageUrlArray;
         const images = imageUrlArray.map((url, index) => {
@@ -64,26 +70,24 @@ class Images extends Component {
                 src = { url }
                 key = { index }
                 onClick = {
-                    () => this.handlePopup(url) }
+                    () => this.handlePopup(url)
+                }
                 />
             )
         })
-        return ( <
-            div className = "Images" >
+        return ( < div className = "Images" >
             <
             form onSubmit = { this.imageSubmitter } >
             <
             input type = "text"
             placeholder = "Введите url картинки"
             onChange = { this.handleLinkChange }
-            /> <
-            button type = "Submit"
-            class = "SubmitButton" > Подтвердить < /button> <
-            /form> { images } {
+            /> <button type = "Submit"
+            class = "SubmitButton" > Подтвердить < /button> </form > { images } {
                 this.state.showModal ? ( <
                     Popup popImageUrl = { this.state.popImageUrl }
                     closePopup = { this.handlePopup }
-                    deleteImage = { this.imageDeletter }
+                    deleteImage = { this.ttt.bind(this, this.state.popImageUrl) }
                     />
                 ) : null
             } <

@@ -9,6 +9,7 @@ class App extends Component {
             Images / >
             <
             /div>
+
         );
     }
 }

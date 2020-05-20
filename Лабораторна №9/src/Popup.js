@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Images.css';
 
+
+
 class App extends Component {
     render() {
         return ( <
@@ -16,9 +18,11 @@ class App extends Component {
             onClick = { this.props.deleteImage } >
             УДАЛИТЬ <
             /button> <
-            img src = { this.props.popImageUrl }
-            /> <
-            /div> <
+            img height = "100%"
+            width = "100%"
+            src = { this.props.popImageUrl }
+            /> < /
+            div > <
             /div>
         );
     }
