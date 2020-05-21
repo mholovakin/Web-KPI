@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        lab8
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="videva">
+        <video class="video__media" src="media/bg.mp4" muted loop autoplay></video>
+    </div>
+    <table border="1" id="MainTable">
+        <caption id="Caption">
+            Information will refresh after 20s:
+        </caption>
+        <thead>
+            <tr id="tableHead">
+                <th>NAME</th>
+                <th>COMPANY</th>
+                <th>PRICE</th>
+                <th>LATEST REFRESH</th>
+            </tr>
+        </thead>
+    </table>
+    <script src="node_modules/rxjs/bundles/rxjs.umd.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

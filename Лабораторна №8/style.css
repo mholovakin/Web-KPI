@@ -1,0 +1,44 @@
+#MainTable {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    text-shadow: #000 1px 0px 2px, #000 0px 1px 1px, #000 0px -1px 1px, #000 -1px 0px 1px, 0 0 40px rgba(0, 0, 0, 0.8);
+    color: brown;
+    margin-top: 50px;
+    font: 20pt Verdana;
+}
+
+.videva {
+    z-index: 1;
+}
+
+#latestPrice:before {
+    content: '$';
+}
+
+#latestUpdate:after {
+    content: ' seconds';
+}
+
+#Caption:after {
+    content: 's.';
+}
+
+.video__media {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
