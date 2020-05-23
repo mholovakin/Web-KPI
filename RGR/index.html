@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bikeshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="col-lg-5">
+                    <nav>
+                        <ul class="menu d-flex justify-content-between">
+                            <li class="menu__item">
+                                <a href="#history">history</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#features">Bikes</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#details">Accesories </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="book">
+                        <center>
+                            <a href="#"><img src="images/cart.png" alt="logo"></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <h1 class="title__heading">
+                            Lorem ipsum dolor sit amet<br/> consectetur adipisicing
+                        </h1>
+                        <p class="title__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <section id="history" class="history">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="title_history">
+                        <h1 class="title_history__heading">
+                            Lorem ipsum dolor <br/> sit amet consectetur!
+                        </h1>
+                        <p class="title_history__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore <br/> magna aliqua. Ut enim ad minim veniam, quis nostrud <br/> exercitation ullamco laboris nisi ut.aliquip
+                            ex ea commodo consequat. <br/><br/> Duis aute irure dolor in reprehenderit in voluptate velit <br/> esse cillum dolore eu fugiat nulla pariatur. Excepteur <br/> sint occaecat cupidatat non proident, sunt in culpa qui <br/>                            officia deserunt mollit anim id est laborum.<br/><br/> Sed ut perspiciatis unde omnis iste natus error sit
+                        </p>
+                        <div class="read_more">
+                            <a href="#"><img src="images/read_more.png" alt="read_more"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <p class="title_history__desc2"><i>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>
+                         sed do eiusmod tempor incididunt ut labore et dolore <br/>
+                         magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>
+                          exercitation ullamco laboris nisi ut aliquip ex ea commodo<br/> 
+                          consequat. Duis aute irure dolor.</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fill1" class="fill1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filler_1">
+                        <center>
+                            <h1 class="filler_1__heading">
+                                Lorem ipsum dolor sit amet consectetur!
+                            </h1>
+                            <p class="filler_1__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <br/> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.<br/> aliquip
+                                ex ea commodo consequat.
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/red-bike.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/blue-bike.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/green-bike.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/violet-bike.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row111">
+                        <div class="column">
+                            <img class="demo cursor" src="images/red-bike.png" style="width:100%" onclick="currentSlide(1)" alt="Red bike">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/blue-bike.jpg" style="width:100%" onclick="currentSlide(2)" alt="Blue bike">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/green-bike.jpg" style="width:100%" onclick="currentSlide(3)" alt="Green bike">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/violet-bike.jpg" style="width:100%" onclick="currentSlide(4)" alt="Violet bike">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="fill2 " class="fill1 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="filler_2 ">
+                        <center>
+                            <h1 class="filler_2__heading ">
+                                Lorem ipsum dolor sit amet consectetur!
+                            </h1>
+                            <p class="filler_1__desc ">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <br/> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.<br/> aliquip
+                                ex ea commodo consequat.
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details " class="details ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 ">
+                    <div class="seats ">
+                        <center><img src="images/component1.png " width="250 " height="220 " alt="component1 "></center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="seats ">
+                        <center><img src="images/component2.png " width="250 " height="220 " alt="component1 "></center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="seats ">
+                        <center><img src="images/component3.png " width="250 " height="220 " alt="component1 "></center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="seats ">
+                        <center><img src="images/component4.png " width="250 " height="220 " alt="component1 "></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="under_text " class="under_text ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 ">
+                    <div class="undertxt ">
+                        <center>
+                            <h1 style="color: #3c3c3c; font-size: 24px ">Lorem ipsum dolor sit<br/>$135</h1>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="undertxt ">
+                        <center>
+                            <h1 style="color: #3c3c3c; font-size: 24px ">Lorem ipsum dolor sit<br/>$135</h1>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="undertxt ">
+                        <center>
+                            <h1 style="color: #3c3c3c; font-size: 24px ">Lorem ipsum dolor sit<br/>$135</h1>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="undertxt ">
+                        <center>
+                            <h1 style="color: #3c3c3c; font-size: 24px ">Lorem ipsum dolor sit<br/>$135</h1>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buynow " class="buynow ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 ">
+                    <div class="book ">
+                        <center>
+                            <a href="# "><img src="images/BUY-NOW.png " alt="buynow "></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="book ">
+                        <center>
+                            <a href="# "><img src="images/BUY-NOW.png " alt="buynow "></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="book ">
+                        <center>
+                            <a href="# "><img src="images/BUY-NOW.png " alt="buynow "></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="book ">
+                        <center>
+                            <a href="# "><img src="images/BUY-NOW.png " alt="buynow "></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer " class="footer ">
+        <div class="spacef1 "></div>
+        <div class="rectangle ">
+            <center>
+                <div class="sub ">
+                    <h1 style="color: #3c3c3c; font-size: 60px ">Subscribe our newsletter</h1>
+                </div>
+                <p style="color: #6a6a6a; font-size: 18px ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br/> dolore magna aliqua enim ad minim veniam, quis nostrud exercitation.</p>
+                <div class="inputer ">
+                    <input type="text " id="txt_1 " onkeyup='saveValue(this);' />
+                    <script type="text/javascript ">
+                        document.getElementById("txt_1 ").value = getSavedValue("txt_1 ");
+
+                        function saveValue(e) {
+                            var id = e.id;
+                            var val = e.value;
+                            localStorage.setItem(id, val);
+                        }
+
+
+                        function getSavedValue(v) {
+                            if (!localStorage.getItem(v)) {
+                                return " ";
+                            }
+                            return localStorage.getItem(v);
+                        }
+                    </script>
+                    <a href="# "><img src="images/Subscribe.png " alt="Subscribe "></a>
+                </div>
+            </center>
+        </div>
+        <div class="spacef2 "></div>
+    </footer>
+</body>
+
+</html>
